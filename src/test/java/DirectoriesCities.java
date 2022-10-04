@@ -1,18 +1,17 @@
+
 import org.testng.annotations.Test;
 
-import static io.restassured.RestAssured.given;
+import static util.Constants.getCity;
 
 public class DirectoriesCities {
 
+    static String url = getCity;
+
     @Test
-        public void city(){
-        given().
-        when().
-        header("Authorization","Basic aW5nbzpTYzR4OGozMTJERDc=").
-        get("https://insur-api.anctm.biz/api/cities").
-        then().
-        assertThat().statusCode(200).
-        log().all();
+        public static void city(){
+
+        Authorization.auth(url);
+
 
 
 }
