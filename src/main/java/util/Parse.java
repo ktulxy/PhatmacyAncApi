@@ -4,10 +4,12 @@ import org.json.JSONObject;
 
 public class Parse {
 
-    public static void parseJson(){
+    public static Object parseJson(Object resp){
 
-    JSONObject obj = new JSONObject("{\"name\": \"John\"}");
+    Object obj = String.valueOf(new JSONObject(resp));
 
-     System.out.println(obj.getString("name")); //John
+    System.out.println(obj);
+     //System.out.println(obj.getString("name")); //John
+        return obj;
     }
 }

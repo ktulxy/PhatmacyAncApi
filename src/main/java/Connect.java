@@ -1,12 +1,7 @@
-import util.Constants;
-
 import static io.restassured.RestAssured.given;
-import static util.Constants.*;
+import static util.Constants.TOKEN;
 
-public class Authorization {
-
-
-
+public class Connect {
     public static void auth(String url) {
         given().
                 when().

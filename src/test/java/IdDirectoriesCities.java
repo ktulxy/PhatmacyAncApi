@@ -10,7 +10,7 @@ public class IdDirectoriesCities {
 
     @Test
     public static void IdCities(){
-        Authorization.auth(url);
+        Connect.auth(url);
 
     }
 }
